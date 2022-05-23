@@ -37,6 +37,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3655EB8283B774D006FE545 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		F3ACC95F283AC75E00EF9A53 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +63,9 @@
 		F3ACC96A283AC75E00EF9A53 /* DiFood */ = {
 			isa = PBXGroup;
 			children = (
-				F3ACC982283AD29700EF9A53 /* Model */,
-				F3ACC981283AD28E00EF9A53 /* View */,
+				F3655EB8283B774D006FE545 /* CustomViews */,
+				F3ACC982283AD29700EF9A53 /* Models */,
+				F3ACC981283AD28E00EF9A53 /* Views */,
 				F3ACC980283AD28800EF9A53 /* Controller */,
 				F3ACC97F283AD27F00EF9A53 /* Main Settings */,
 				F3ACC974283AC76000EF9A53 /* Assets.xcassets */,
@@ -83,20 +91,20 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		F3ACC981283AD28E00EF9A53 /* View */ = {
+		F3ACC981283AD28E00EF9A53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				F3ACC976283AC76000EF9A53 /* LaunchScreen.storyboard */,
 				F3ACC971283AC75E00EF9A53 /* Main.storyboard */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		F3ACC982283AD29700EF9A53 /* Model */ = {
+		F3ACC982283AD29700EF9A53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
