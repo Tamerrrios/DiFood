@@ -22,21 +22,62 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="686"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0nU-tH-AzA">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="414" height="651"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ro9-yd-t90">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="ro9-yd-t90" customClass="OnboardingCollectionViewCell" customModule="DiFood" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="651"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ntk-Qf-Xy6">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="651"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dq6-Jm-jCM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="569.5"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hLv-gH-ZUf">
+                                                    <rect key="frame" x="16" y="569.5" width="382" height="65.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказ еды без ожидания" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGZ-Nu-gZl">
+                                                            <rect key="frame" x="18" y="0.0" width="346.5" height="37"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш мобильный официант" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQA-Gz-UPE">
+                                                            <rect key="frame" x="85" y="45" width="212.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hLv-gH-ZUf" firstAttribute="top" secondItem="Dq6-Jm-jCM" secondAttribute="bottom" id="2RL-Py-oL4"/>
+                                                <constraint firstAttribute="trailing" secondItem="hLv-gH-ZUf" secondAttribute="trailing" constant="16" id="2fP-fr-YIa"/>
+                                                <constraint firstAttribute="bottom" secondItem="hLv-gH-ZUf" secondAttribute="bottom" constant="16" id="POr-e0-9cd"/>
+                                                <constraint firstItem="Dq6-Jm-jCM" firstAttribute="leading" secondItem="Ntk-Qf-Xy6" secondAttribute="leading" id="e9Y-v8-3tl"/>
+                                                <constraint firstItem="Dq6-Jm-jCM" firstAttribute="top" secondItem="Ntk-Qf-Xy6" secondAttribute="top" id="kiO-bP-ORa"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dq6-Jm-jCM" secondAttribute="trailing" id="nkk-KT-n5m"/>
+                                                <constraint firstItem="hLv-gH-ZUf" firstAttribute="leading" secondItem="Ntk-Qf-Xy6" secondAttribute="leading" constant="16" id="poj-Xh-G0E"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="651"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLabel" destination="gQA-Gz-UPE" id="6Vn-ve-Oz0"/>
+                                            <outlet property="slideImageView" destination="Dq6-Jm-jCM" id="U3Y-N3-NTs"/>
+                                            <outlet property="slideTitleLabel" destination="tGZ-Nu-gZl" id="RwE-oK-4kG"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qAS-OK-6Rh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zXr-jd-OX3"/>
+                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGh-Cl-sL2">
                                 <rect key="frame" x="132" y="772" width="150" height="50"/>
@@ -59,7 +100,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1Sm-n2-nTN">
-                                <rect key="frame" x="149" y="730" width="116" height="26"/>
+                                <rect key="frame" x="149.5" y="730" width="115.5" height="26"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.99215686270000003" green="0.4267467472" blue="0.16244367009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
