@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eZb-sg-9pX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qhj-6K-2nR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -146,14 +146,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="8CJ-Xw-Z9H">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="8CJ-Xw-Z9H">
                                 <rect key="frame" x="20" y="88" width="374" height="565"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RegisterPage" translatesAutoresizingMaskIntoConstraints="NO" id="FdE-Ym-BrM">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="404"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="374" id="ATs-FV-n8X"/>
-                                            <constraint firstAttribute="height" constant="404" id="Cj3-wA-Pde"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="ATs-FV-n8X"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="404" id="Cj3-wA-Pde"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+998" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jBJ-X6-33j">
@@ -175,12 +175,23 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Далее"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="etC-dp-sCg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="etC-dp-sCg" firstAttribute="bottom" secondItem="8CJ-Xw-Z9H" secondAttribute="bottom" constant="209" id="Yo4-zX-EJ9"/>
+                            <constraint firstItem="8CJ-Xw-Z9H" firstAttribute="leading" secondItem="etC-dp-sCg" secondAttribute="leading" constant="20" id="equ-wb-Sqc"/>
+                            <constraint firstItem="etC-dp-sCg" firstAttribute="trailing" secondItem="8CJ-Xw-Z9H" secondAttribute="trailing" constant="20" id="rMe-DO-xTz"/>
+                            <constraint firstItem="8CJ-Xw-Z9H" firstAttribute="top" secondItem="etC-dp-sCg" secondAttribute="top" constant="44" id="vpz-li-ND0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gR1-xn-JVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -201,8 +212,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registerPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-Yq-4Jc">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="404"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="374" id="Th3-p3-WpO"/>
-                                            <constraint firstAttribute="height" constant="404" id="apq-JA-Ic6"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="Th3-p3-WpO"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="404" id="apq-JA-Ic6"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wce-gr-6Qr">
@@ -242,6 +253,11 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Регистрация"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -249,8 +265,10 @@
                         <viewLayoutGuide key="safeArea" id="NdL-qq-ceR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qOA-Wk-Ppj" firstAttribute="centerY" secondItem="rgz-vr-gmd" secondAttribute="centerY" id="HM3-jv-RXF"/>
-                            <constraint firstItem="qOA-Wk-Ppj" firstAttribute="centerX" secondItem="rgz-vr-gmd" secondAttribute="centerX" id="awd-FK-g0L"/>
+                            <constraint firstItem="NdL-qq-ceR" firstAttribute="bottom" secondItem="qOA-Wk-Ppj" secondAttribute="bottom" constant="103.5" id="Slu-h1-Zsz"/>
+                            <constraint firstItem="NdL-qq-ceR" firstAttribute="trailing" secondItem="qOA-Wk-Ppj" secondAttribute="trailing" constant="20" id="d5B-si-gmq"/>
+                            <constraint firstItem="qOA-Wk-Ppj" firstAttribute="top" secondItem="NdL-qq-ceR" secondAttribute="top" constant="93.5" id="pdD-QK-FmF"/>
+                            <constraint firstItem="qOA-Wk-Ppj" firstAttribute="leading" secondItem="NdL-qq-ceR" secondAttribute="leading" constant="20" id="r79-OL-TLz"/>
                         </constraints>
                     </view>
                 </viewController>
