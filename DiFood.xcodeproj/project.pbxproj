@@ -16,9 +16,8 @@
 		F3ACC973283AC75E00EF9A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC971283AC75E00EF9A53 /* Main.storyboard */; };
 		F3ACC975283AC76000EF9A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC974283AC76000EF9A53 /* Assets.xcassets */; };
 		F3ACC978283AC76000EF9A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC976283AC76000EF9A53 /* LaunchScreen.storyboard */; };
-		F3FBCA3B283D23B900B82873 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBCA3A283D23B900B82873 /* HomeViewController.swift */; };
 		F3FBCA3D283D451F00B82873 /* ListOfCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBCA3C283D451F00B82873 /* ListOfCafe.swift */; };
-		F3FBCA3F283D46AD00B82873 /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBCA3E283D46AD00B82873 /* MenuViewCell.swift */; };
+		F3FBCA41283D6F8700B82873 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBCA40283D6F8700B82873 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +32,8 @@
 		F3ACC974283AC76000EF9A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3ACC977283AC76000EF9A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3ACC979283AC76000EF9A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3FBCA3A283D23B900B82873 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3FBCA3C283D451F00B82873 /* ListOfCafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCafe.swift; sourceTree = "<group>"; };
-		F3FBCA3E283D46AD00B82873 /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
+		F3FBCA40283D6F8700B82873 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +114,7 @@
 		F3ACC980283AD28800EF9A53 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F3FBCA3A283D23B900B82873 /* HomeViewController.swift */,
-				F3FBCA3E283D46AD00B82873 /* MenuViewCell.swift */,
+				F3FBCA40283D6F8700B82873 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,11 +212,10 @@
 				F3655EC4283B8251006FE545 /* OnboardingSlide.swift in Sources */,
 				F3ACC96C283AC75E00EF9A53 /* AppDelegate.swift in Sources */,
 				F3ACC96E283AC75E00EF9A53 /* SceneDelegate.swift in Sources */,
+				F3FBCA41283D6F8700B82873 /* HomeViewController.swift in Sources */,
 				F3FBCA3D283D451F00B82873 /* ListOfCafe.swift in Sources */,
 				F3655EC2283B8003006FE545 /* UIView+Extension.swift in Sources */,
-				F3FBCA3F283D46AD00B82873 /* MenuViewCell.swift in Sources */,
 				F3655EBE283B7C49006FE545 /* OnboardingViewController.swift in Sources */,
-				F3FBCA3B283D23B900B82873 /* HomeViewController.swift in Sources */,
 				F3655EC6283B855B006FE545 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
