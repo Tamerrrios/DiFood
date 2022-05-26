@@ -12,6 +12,7 @@ class HomeViewController: UITableViewController, UISearchBarDelegate  {
     @IBOutlet var searchBar: UISearchBar!
     
     let cafeList = Cafe.getList()
+    
     var filteredList: [Cafe]!
     
     
@@ -20,6 +21,7 @@ class HomeViewController: UITableViewController, UISearchBarDelegate  {
         searchBar.delegate = self
         tableView.rowHeight = 80
         filteredList = cafeList
+        hideKeyboardWithTouching()
     }
     
     // MARK: - Table view data source
@@ -54,5 +56,24 @@ class HomeViewController: UITableViewController, UISearchBarDelegate  {
         }
         self.tableView.reloadData()
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let menuVC = segue.destination as? MenuViewController else {return}
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        menuVC.nameOfCafe = cafeList[indexPath.row].name
+    }
 }
 
+
+extension HomeViewController {
+    func hideKeyboardWithTouching() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+}

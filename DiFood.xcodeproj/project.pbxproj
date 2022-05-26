@@ -16,6 +16,7 @@
 		F3ACC973283AC75E00EF9A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC971283AC75E00EF9A53 /* Main.storyboard */; };
 		F3ACC975283AC76000EF9A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC974283AC76000EF9A53 /* Assets.xcassets */; };
 		F3ACC978283AC76000EF9A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC976283AC76000EF9A53 /* LaunchScreen.storyboard */; };
+		F3F637BC283EA7540022EBAB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F637BB283EA7540022EBAB /* MenuViewController.swift */; };
 		F3FBCA3D283D451F00B82873 /* ListOfCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBCA3C283D451F00B82873 /* ListOfCafe.swift */; };
 		F3FBCA41283D6F8700B82873 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBCA40283D6F8700B82873 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		F3ACC974283AC76000EF9A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3ACC977283AC76000EF9A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3ACC979283AC76000EF9A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F637BB283EA7540022EBAB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F3FBCA3C283D451F00B82873 /* ListOfCafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCafe.swift; sourceTree = "<group>"; };
 		F3FBCA40283D6F8700B82873 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F3FBCA40283D6F8700B82873 /* HomeViewController.swift */,
+				F3F637BB283EA7540022EBAB /* MenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				F3ACC96C283AC75E00EF9A53 /* AppDelegate.swift in Sources */,
 				F3ACC96E283AC75E00EF9A53 /* SceneDelegate.swift in Sources */,
 				F3FBCA41283D6F8700B82873 /* HomeViewController.swift in Sources */,
+				F3F637BC283EA7540022EBAB /* MenuViewController.swift in Sources */,
 				F3FBCA3D283D451F00B82873 /* ListOfCafe.swift in Sources */,
 				F3655EC2283B8003006FE545 /* UIView+Extension.swift in Sources */,
 				F3655EBE283B7C49006FE545 /* OnboardingViewController.swift in Sources */,

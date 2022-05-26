@@ -39,7 +39,11 @@ class OnboardingViewController: UIViewController {
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         
         if currentPage == slides.count - 1 {
-            print("Go to next page")
+            let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterVC") as! UIViewController
+            
+        present(controller, animated: true, completion: nil)
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .flipHorizontal
         } else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
