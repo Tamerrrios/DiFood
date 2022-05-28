@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Klx-tz-gDX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yND-Lp-Lxo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -261,7 +261,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Klx-tz-gDX" kind="show" id="f6J-pg-zoA"/>
+                                            <segue destination="yND-Lp-Lxo" kind="show" id="f6J-pg-zoA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -338,16 +338,14 @@
                             <outlet property="delegate" destination="rGO-q0-7wy" id="gby-Rx-Osz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="DiFood" id="NUQ-6d-Kh0">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.circle" catalog="system" id="mBu-zd-UKy"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="DiFood" id="NUQ-6d-Kh0"/>
                     <connections>
                         <outlet property="searchBar" destination="DOR-Tr-pCY" id="diI-0t-sw4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZW-B5-Ckp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3461" y="99"/>
+            <point key="canvasLocation" x="4371.0144927536239" y="98.4375"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="RuW-F6-mf2">
@@ -457,15 +455,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7l-AY-oZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4440.579710144928" y="97.767857142857139"/>
+            <point key="canvasLocation" x="5350.7246376811599" y="97.767857142857139"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Избранное-->
+        <scene sceneID="2Sx-pa-MC9">
+            <objects>
+                <viewController id="K8q-83-pAO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G6e-hP-BCT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aIR-R2-KGE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Избранное" image="star.circle" catalog="system" id="UBZ-RK-dJ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfO-f9-4zQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3459" y="-613"/>
+        </scene>
+        <!--Кошелек-->
+        <scene sceneID="LNB-KP-4rz">
+            <objects>
+                <viewController id="pz9-w3-rhx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNq-4k-gOh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LxB-rW-tev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Кошелек" image="dollarsign.circle" catalog="system" id="zKx-mq-NOh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sk-ga-xX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4239" y="-606"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="qmk-Ah-shF">
+            <objects>
+                <viewController id="pR4-dt-LDf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O7C-cl-7B5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="06F-Va-Acr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" id="ehF-67-2PT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grH-nL-Dxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5125" y="-606"/>
+        </scene>
+        <!--Главное меню-->
         <scene sceneID="0Dt-lU-7D6">
             <objects>
                 <navigationController modalPresentationStyle="fullScreen" id="Klx-tz-gDX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главное меню" image="homekit" catalog="system" id="gFC-qG-t7Q"/>
                     <navigationItem key="navigationItem" id="kgW-yP-A2E"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Dtg-pc-fLq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -474,13 +521,37 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSf-Ep-sIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2591" y="98"/>
+            <point key="canvasLocation" x="3500.0000000000005" y="97.767857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yiA-T6-MF0">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="yND-Lp-Lxo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mGU-aT-ke8"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LmI-Sg-Fdw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Klx-tz-gDX" kind="relationship" relationship="viewControllers" id="uXb-M5-qTA"/>
+                        <segue destination="K8q-83-pAO" kind="relationship" relationship="viewControllers" id="R7X-qw-Wza"/>
+                        <segue destination="pz9-w3-rhx" kind="relationship" relationship="viewControllers" id="17A-OW-sQg"/>
+                        <segue destination="pR4-dt-LDf" kind="relationship" relationship="viewControllers" id="Ex5-Lv-B4E"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ty-wb-Iag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2589.8550724637685" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
         <image name="RegisterPage" width="968" height="915"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="registerPhoto" width="968" height="915"/>
+        <image name="star.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

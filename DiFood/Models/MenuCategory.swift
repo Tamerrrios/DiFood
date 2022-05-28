@@ -8,6 +8,14 @@
 import Foundation
 import UIKit
 
+//
+//enum Sections: String {
+//    case Breakfast = "Завтраки"
+//    case Soups = "Супы"
+//    case SecondDish = "Второе блюдо"
+//    case Salads = "Салаты"
+//    case Desserts = "Десерты"
+//}
 
 struct Breakfast {
     let name: String
@@ -21,27 +29,25 @@ struct Breakfast {
         Breakfast(name: "Омлет", image: UIImage(imageLiteralResourceName: "Омлет"), price: "28 000 сум"),
         Breakfast(name: "Рисовая Каша", image: UIImage(imageLiteralResourceName: "РисоваяКаша"), price: "31 000 сум"),
         Breakfast(name: "Гаспачо", image: UIImage(imageLiteralResourceName: "Гаспачо"), price: "33 000 сум"),
-        Breakfast(name: "Рисовая Каша", image: UIImage(imageLiteralResourceName: "РисоваяКаша"), price: "31 000 сум"),
-        Breakfast(name: "Рисовая Каша", image: UIImage(imageLiteralResourceName: "РисоваяКаша"), price: "31 000 сум"),
         ]
     }
 }
 
-//struct Soups {
-//    let name: String
-//    let image: UIImage
-//    let price: String
-//
-//    func getSoups() -> [Soups] {
-//        [
-//        Soups(name: "Гаспачо", image: UIImage(imageLiteralResourceName: "Гаспачо"), price: "42 000 сум"),
-//        Soups(name: "Кукси", image: UIImage(imageLiteralResourceName: "кукси"), price: "38 000 сум"),
-//        Soups(name: "Окрошка", image: UIImage(imageLiteralResourceName: "Окрошка"), price: "27 000 сум"),
-//        Soups(name: "Сырный суп", image: UIImage(imageLiteralResourceName: "СырныйСуп"), price: "42 000 сум")
-//        ]
-//    }
-//}
-//
+struct Soups {
+    let name: String
+    let image: UIImage
+    let price: String
+
+    static func getSoups() -> [Soups] {
+        [
+        Soups(name: "Гаспачо", image: UIImage(imageLiteralResourceName: "Гаспачо"), price: "42 000 сум"),
+        Soups(name: "Кукси", image: UIImage(imageLiteralResourceName: "кукси"), price: "38 000 сум"),
+        Soups(name: "Окрошка", image: UIImage(imageLiteralResourceName: "Окрошка"), price: "27 000 сум"),
+        Soups(name: "Сырный суп", image: UIImage(imageLiteralResourceName: "СырныйСуп"), price: "42 000 сум")
+        ]
+    }
+}
+
 //struct Salads {
 //    let name: String
 //    let image: UIImage
