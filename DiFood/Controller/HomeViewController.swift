@@ -61,7 +61,7 @@ class HomeViewController: UITableViewController, UISearchBarDelegate  {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let menuVC = segue.destination as? MenuViewController else {return}
         guard let indexPath = tableView.indexPathForSelectedRow else {return}
-        menuVC.nameOfCafe = cafeList[indexPath.row].name
+        menuVC.nameOfCafes = cafeList[indexPath.row].name
     }
 }
 
