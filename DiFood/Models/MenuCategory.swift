@@ -17,6 +17,12 @@ import UIKit
 //    case Desserts = "Десерты"
 //}
 
+
+struct Category {
+    let breakfast: Breakfast
+    let soups: Soups
+}
+
 struct Breakfast {
     let name: String
     let image: UIImage

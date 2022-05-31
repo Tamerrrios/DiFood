@@ -21,8 +21,9 @@ class CategoryViewCell: UITableViewCell {
     
     
     func getCategory(breakfast: Breakfast, soups: Soups) {
-        
-       
+        imageOfDishes.image = breakfast.image
+        nameOfDishes.text = breakfast.name
+        priceOfDishes.text = breakfast.price
     }
     
 }

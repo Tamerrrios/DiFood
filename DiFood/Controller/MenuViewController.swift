@@ -9,8 +9,10 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
-    let breakfastCategory = Breakfast.getMenu()
-    let soupsCategory = Soups.getSoups()
+let breakfastCategory = Breakfast.getMenu()
+let soupsCategory = Soups.getSoups()
+    
+
     
    
     @IBOutlet var nameOfCafe: UILabel!
@@ -23,6 +25,10 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         nameOfCafe.text = nameOfCafes
         tableView.rowHeight = 120
+    }
+    
+    
+    @IBAction func likeItem(_ sender: UIBarButtonItem) {
     }
 }
 
@@ -47,10 +53,18 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.getCategory(breakfast: breakfastCategory[indexPath.row], soups: soupsCategory[indexPath.row])
         
+        
         //cell.getCategory(breakfast: breakfastCategory[indexPath.row])
         return cell
         
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let addingVC = segue.destination as? AddingViewController else {return}
+       guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        addingVC.nameOfFood = breakfastCategory[indexPath.row].name
+        addingVC.image = breakfastCategory[indexPath.row].image
+    }
     
 }

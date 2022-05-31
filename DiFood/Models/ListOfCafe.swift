@@ -7,7 +7,8 @@
 
 import UIKit
 
-struct Cafe {
+
+struct Cafe  {
     var name: String
     let image: UIImage
     
